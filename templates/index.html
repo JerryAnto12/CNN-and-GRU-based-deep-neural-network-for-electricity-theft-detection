@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electricity Consumption Prediction</title>
+  </head>
+  <body>
+    <form action="app.py" method="post">
+      <label for="a">Electricity:Facility [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="a" name="a" /><br /><br />
+      <label for="b">Fans:Electricity [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="b" name="b" /><br /><br />
+      <label for="c">Cooling:Electricity [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="c" name="c" /><br /><br />
+      <label for="d">InteriorLights:Electricity [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="d" name="d" /><br /><br />
+      <label for="e">InteriorEquipment:Electricity [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="e" name="e" /><br /><br />
+      <label for="f">Gas:Facility [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="f" name="f" /><br /><br />
+      <label for="g">Heating:Gas [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="g" name="g" /><br /><br />
+      <label for="h">InteriorEquipment:Gas [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="h" name="h" /><br /><br />
+      <label for="i">Water Heater:WaterSystems:Gas [kW](Hourly)</label>
+      <input type="number" step="0.000001" id="i" name="i" /><br /><br />
+      <input type="submit" value="Submit" />
+      <h2>output:{{prediction_text}}</h2>
+    </form>
+  </body>
+</html>
